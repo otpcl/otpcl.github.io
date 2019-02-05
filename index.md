@@ -32,7 +32,7 @@ ok
 
 ```erlang
 {erl_opts, [debug_info]}.
-{deps, [{otpcl, "0.1.0"}]}.
+{deps, [{otpcl, "0.1.2"}]}.
 
 {shell, [
   % {config, "config/sys.config"},
@@ -78,7 +78,7 @@ defmodule OtpclMixTest.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:otpcl, "~> 0.1.0"}
+      {:otpcl, "~> 0.1.2"}
     ]
   end
 end
