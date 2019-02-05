@@ -1,12 +1,13 @@
-# OTPCL (Open Telecom Platform Command Language)
-
-## What is it?
+---
+title: OTPCL (Open Telecom Platform Command Language)
+---
+# What is it?
 
 OTPCL is a scripting language designed to integrate with and extend applications written in BEAM-based languages (Erlang, Elixir, LFE, etc.).
 
-## How do I use it?
+# How do I use it?
 
-### Standalone
+## Standalone
 
 * Make sure you've installed a relatively recent Erlang/OTP distribution (currently tested and developed against Erlang/OTP 21, but older versions should work to some extent)
 
@@ -25,7 +26,7 @@ Hello, world!
 ok
 ```
 
-### Within an Erlang application (using rebar3)
+## Within an Erlang application (using rebar3)
 
 * Add OTPCL to your `rebar.config`:
 
@@ -49,7 +50,7 @@ Hello, world!
 [... a bunch of interpreter state ...]
 ```
 
-### Within an Elixir application (using Mix)
+## Within an Elixir application (using Mix)
 
 * Add OTPCL to your `mix.exs`:
 
@@ -94,3 +95,4 @@ Interactive Elixir (1.7.3) - press Ctrl+C to exit (type h() ENTER for help)
 iex(1)> :otpcl.eval "import Elixir.IO; puts {Hello, world!}"
 Hello, world!
 [... a bunch of interpreter state ...]
+```
