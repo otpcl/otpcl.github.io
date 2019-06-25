@@ -28,14 +28,14 @@
         
         {% if site.show_navlinks %}
         <ul class="navlinks">
-          <li><a href="{{ "/syntax.html" | absolute_url }}">Syntax</a></li>
+          <li><a href="{{ "/syntax.html" | absolute_url }}">Learn the <strong>Syntax</strong></a></li>
+          <li><a href="{{ site.hex.hexdocs_url }}">Read the <strong>HexDocs</strong></a></li>
         </ul>
         {% endif %}
 
         {% if site.show_downloads %}
         <ul class="downloads">
           <li><a href="{{ site.hex.repository_url }}">Install with <strong>Hex</strong></a></li>
-          <li><a href="{{ site.hex.hexdocs_url }}">Read the <strong>HexDocs</strong></a></li>
           <li><a href="{{ site.bitbucket.repository_url }}">Fork on <strong>BitBucket</strong></a></li>
           <li><a href="{{ site.github.repository_url }}">Fork on <strong>GitHub</strong></a></li>
         </ul>
