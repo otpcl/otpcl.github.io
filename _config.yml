@@ -3,6 +3,7 @@ title: OTPCL
 description: Open Telecom Platform Command Language
 show_downloads: true
 show_navlinks: true
+show_releases: true
 github:
   repository_url: https://github.com/otpcl/otpcl
 bitbucket:
@@ -13,3 +14,4 @@ hex:
 collections:
   releases:
     output: true
+    layout: default
