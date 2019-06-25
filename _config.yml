@@ -11,6 +11,8 @@ bitbucket:
 hex:
   repository_url: https://hex.pm/packages/otpcl
   hexdocs_url: https://hexdocs.pm/otpcl/
+gitter:
+  home_url: https://gitter.im/otpcl
 collections:
   releases:
     output: true
