@@ -42,7 +42,7 @@ As mentioned previously, in the case of strings which begin with an opening curl
 
 ## Charlists
 
-If the first character of a word is a backquote (`\``) then the word is terminated by the next unescaped backquote and is interpreted as a list of characters or "charlist" (Erlang type: normal string / character list).  Any otherwise-special characters appearing within the charlist's quotes are included as-is in the resulting charlist.  The starting and ending backquotes will not be included in the resulting charlist.
+If the first character of a word is a backquote (`` ` ``) then the word is terminated by the next unescaped backquote and is interpreted as a list of characters or "charlist" (Erlang type: normal string / character list).  Any otherwise-special characters appearing within the charlist's quotes are included as-is in the resulting charlist.  The starting and ending backquotes will not be included in the resulting charlist.
 
 ## Lists
 
@@ -65,3 +65,5 @@ If a word consists entirely of digits and a single period (`.`), and the period 
 If the first character of a word is a single-quote (`'`) then the word is terminated by the next unescaped single-quote and is interpreted to be an atom (Erlang type: atom).  Any otherwise-special characters appearing within the atom's quotes are included as-is in the resulting atom's name.  The starting and ending single-quotes will not be included in the resulting atom's name.
 
 If a word does not match any of the above rules then the word is interpreted to be an atom (Erlang type: atom).  Any otherwise-special characters appearing between the start of the atom and the next unescaped whitespace, closing parenthesis, greater-than sign, or closing square brace are included as-is in the resulting atom's name.
+
+If the first character of an (unquoted) atom is a pipe character (`|`) then it is treated as the beginning of a new command (thus terminating the previous command).  This enables the use of "pipe commands" in OTPCL to chain commands together in interesting ways.
