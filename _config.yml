@@ -1,3 +1,12 @@
 theme: jekyll-theme-minimal
 title: OTPCL
 description: Open Telecom Platform Command Language
+show_downloads: true
+show_navlinks: true
+github:
+  repository_url: https://github.com/otpcl/otpcl
+bitbucket:
+  repository_url: https://bitbucket.org/YellowApple/otpcl
+hex:
+  repository_url: https://hex.pm/packages/otpcl
+  hexdocs_url: https://hexdocs.pm/otpcl/
