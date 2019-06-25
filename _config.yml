@@ -10,3 +10,6 @@ bitbucket:
 hex:
   repository_url: https://hex.pm/packages/otpcl
   hexdocs_url: https://hexdocs.pm/otpcl/
+collections:
+  releases:
+    output: true
