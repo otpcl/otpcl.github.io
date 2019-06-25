@@ -51,14 +51,14 @@
         {% if site.show_releases %}
         <h2>Release Notes</h2>
         {% for release in site.releases reversed limit:10 %}
-        <p><a href="{{ release.url }}">{{release.date | | date: "%Y-%m-%d"}}: {{release.version}}</a></p>
+        <p><a href="{{ release.url }}">{{release.date | | date: "%Y-%m-%d"}}: <strong>{{release.version}}</strong></a></p>
         {% endfor %}
         {% endif %}
         
         {% if site.show_posts %}
         <h2>Recent Posts</h2>
         {% for post in site.posts reversed limit:10 %}
-        <p><a href="{{ post.url }}">{{post.date}}: {{post.title}}</a></p>
+        <p><a href="{{ post.url }}">{{post.date}}: <strong>{{post.title}}</strong></a></p>
         {% endfor %}
         {% endif %}
         
