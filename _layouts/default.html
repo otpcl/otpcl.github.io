@@ -30,6 +30,7 @@
         <ul class="navlinks">
           <li><a href="{{ "/syntax.html" | absolute_url }}">Learn the <strong>Syntax</strong></a></li>
           <li><a href="{{ site.hex.hexdocs_url }}">Read the <strong>HexDocs</strong></a></li>
+          <li><a href="{{ site.gitter.home_url }}">Chat on <strong>Gitter</strong></a></li>
         </ul>
         {% endif %}
 
@@ -47,6 +48,20 @@
 
       </section>
       <footer>
+        {% if site.show_releases %}
+        <h2>Release Notes</h2>
+        {% for release in site.releases reversed limit:10 %}
+        <p><a href="{{ release.url }}">{{release.date}}: {{release.version}}</a></p>
+        {% endfor %}
+        {% endif %}
+        
+        {% if site.show_posts %}
+        <h2>Recent Posts</h2>
+        {% for post in site.posts reversed limit:10 %}
+        <p><a href="{{ post.url }}">{{post.date}}: {{post.title}}</a></p>
+        {% endfor %}
+        {% endif %}
+        
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
