@@ -21,7 +21,9 @@ OTPCL is a scripting language designed to integrate with and extend applications
 $ bin/otpcl
 OTPCL Shell (WIP!)
 
-otpcl> print "Hello, world!~n"
+otpcl> use io
+ok
+otpcl> io format "Hello, world!~n"
 Hello, world!
 ok
 ```
@@ -32,7 +34,7 @@ ok
 
 ```erlang
 {erl_opts, [debug_info]}.
-{deps, [{otpcl, "0.1.2"}]}.
+{deps, [{otpcl, "0.2.0"}]}.
 
 {shell, [
   % {config, "config/sys.config"},
@@ -78,7 +80,7 @@ defmodule OtpclMixTest.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:otpcl, "~> 0.1.2"}
+      {:otpcl, "~> 0.2.0"}
     ]
   end
 end
