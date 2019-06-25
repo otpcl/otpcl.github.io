@@ -14,4 +14,10 @@ hex:
 collections:
   releases:
     output: true
-    layout: default
+defaults:
+  -
+    scope:
+      path: ""
+      type: "releases"
+    values:
+      layout: "default"
